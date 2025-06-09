@@ -26,6 +26,7 @@ I've chosen a **dark theme** with vibrant highlights (especially pink 💖 – m
 
 ### 📁 Project Structure
 
+```
 src/
 ├── assets/ # Static images, gifs, logos
 ├── components/ # Reusable UI components and sections
@@ -47,6 +48,7 @@ src/
 ├── App.jsx # Route setup and layout
 ├── main.jsx # App entry point
 └── index.css # Tailwind and custom styles
+```
 
 ---
 
