@@ -1,7 +1,9 @@
 import { create } from "zustand";
 
 import holidazeImg from "../assets/holidaze.png";
+
 import bidbuddyImg from "../assets/bidbuddy.png";
+import bidbuddyImg2 from "../assets/bbgiflg.gif";
 import shopdropImg from "../assets/shopdrop.png";
 import floppyyImg from "../assets/floppyy.png";
 import bloglsImg from "../assets/blogls.png";
@@ -15,9 +17,11 @@ export const useProjectStore = create(() => ({
       id: "booking",
       title: "Holidaze",
       image: holidazeImg,
+
       description:
         "A online marketplace for short-and-long-term homestays. Registered users can book a venue and/or list a venue to be booked.",
-      details: `Holidaze is a responsive and modern online marketplace for short and long homestays. The design is focused on accessability and minimalism (whitespace). Inspired by the popular websites today like Airbnb, booking.com, Finn.no and Trivago. Altough i was inspired by Airbnb's many genius solution and UX, i was a bit dissapointed with some parts. On Holidaze, you will register and log in at the same page no matter if you are going to be a venue manager or customer that books trips. Same goes for the profile page - and - its very clear where to navigate. My trips or My venues. From my venues, you will find your customers. You will be naturally guided by this UX. This will make it a smooth experience for everyone. My biggest focus with this project was to, as mentioned, make it smooth, fast and seamless. Since this is a exam project, unfortunately the schools API didnt have everything set up for me to really make this a complete 10/10 product. Further down i will mention improvement (for myself and the API).`,
+      details: `Holidaze is a responsive and modern online marketplace for short and long homestays. The design is focused on accessability and minimalism (whitespace). Inspired by the popular websites today like Airbnb, booking.com, Finn.no and Trivago. Altough i was inspired by Airbnb's many genius solution and UX, i was a bit dissapointed with some parts. On Holidaze, you will register and log in at the same page no matter if you are going to be a venue manager or customer that books trips. Same goes for the profile page - and - its very clear where to navigate. My trips or My venues. From my venues, you will find your customers. You will be naturally guided by this UX. This will make it a smooth experience for everyone. My biggest focus with this project was to, as mentioned, make it smooth, fast and seamless. Since this is a exam project, unfortunately the schools API didnt have everything set up for me to really make this a complete 10/10 product.`,
+      reflection: `As you might notice, theres some loading at the start of the website. It's a Render issue im trying to solve, but im not able to do it right now as this exam assignment is being graded at the moment. Im really proud of this project. Some better design for the profiles could be done in the future.`,
       website: "https://pe2025.onrender.com/",
       github: "https://github.com/LineSvensen/Project-exam-2",
     },
@@ -25,9 +29,11 @@ export const useProjectStore = create(() => ({
       id: "auction",
       title: "BidBuddy",
       image: bidbuddyImg,
+      image2: bidbuddyImg2,
       description:
         "Online auction site where registered users can use coins to bid on listings and create/update/delete listings. ",
       details: `Welcome to this repo! This is BidBuddy; a dynamic and user-friendly auction platform where users can list, bid, and manage listings seamlessly. Whether you're buying vintage treasures or selling valuable collectibles, BidBuddy ensures a smooth and engaging experience. As for now, users have to register with a @stud.noroff.no mail and will be given 1000 "credits" they can use to bid with. So no real payments... Yet ;) `,
+      reflection: `When i first started this project, an assignment for my school, i was wondering if i had enough time. It looked challenging. But it turned out to be both fun and a huge learning experience. Im proud of this project and website. Since i made it, ive made improvements. Better color for buttons, login button only showing when user is actually logged in, and ugly alerts are removed.`,
       website: "https://js2-sp-auction-website.vercel.app/",
       github: "https://github.com/LineSvensen/js2-sp-auction-website",
     },
@@ -38,6 +44,7 @@ export const useProjectStore = create(() => ({
       description:
         "An e-commerce store where users can contact trough form, filter products on sale, add and remove from cart.",
       details: `This is a React-based eCommerce application for browsing and purchasing products. The project includes features like contact trough form, search, sorting, adding items to a cart, and viewing product details. This website demonstrates the basics with using an online store, without the authentication-part.`,
+      reflection: `I made this project, an assignment in my school, when i was just beguinning to learn javascript. Since then, ive added hero banner, better ui and fixed the sort button so it only shows products on sale if selecting products on sale.`,
       website: "https://shopdrop-online-store-react.netlify.app/",
       github: "https://github.com/LineSvensen/CA-react-online-store",
     },

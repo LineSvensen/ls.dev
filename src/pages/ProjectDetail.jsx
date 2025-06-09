@@ -24,7 +24,7 @@ export default function ProjectDetail() {
   }
 
   return (
-    <section className="text-white bg-black min-h-screen px-6 py-12">
+    <section className="text-white bg-black min-h-screen px-6 py-12 flex justify-center items-center">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
         <img
@@ -38,6 +38,20 @@ export default function ProjectDetail() {
           <p className="text-base text-gray-300 whitespace-pre-line mb-6">
             {project.details}
           </p>
+        )}
+
+        {project.reflection && (
+          <div className="mt-6 mb-6">
+            <p className="text-base">{project.reflection}</p>
+          </div>
+        )}
+
+        {project.image2 && (
+          <img
+            src={project.image2}
+            alt={`${project.title} extra`}
+            className="max-w-300  mt-4 mb-6 rounded-lg shadow flex justify-center"
+          />
         )}
 
         <div className="flex flex-wrap gap-4 mb-6">
