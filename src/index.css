@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+.animated-text span::before {
+  content: "Line Svensen";
+  color: #ff0080;
+  animation: words 20s infinite;
+}
+
+.animated-text span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 110%;
+  background-color: black;
+  border-left: 2px solid #ff0080;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid transparent;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "Line Svensen";
+  }
+  21%,
+  40% {
+    content: "a developer";
+  }
+  41%,
+  60% {
+    content: "an UX designer";
+  }
+  61%,
+  80% {
+    content: "an entrepreneur";
+  }
+  81%,
+  100% {
+    content: "an enthusiast";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.15em;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px #ffffff, 0 0 10px #ffffff,
+    0 0 15px #ffffff, 0 0 20px #ffffff;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out forwards;
+}
