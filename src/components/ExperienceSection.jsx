@@ -3,16 +3,14 @@ import React from "react";
 export default function ExperienceSection() {
   const experiences = [
     {
-      title: "Over a year",
-      description: "of hands-on experience in web development",
+      title: "Front-End Higher professional Degree",
+      description:
+        "from Noroff school of technology and digital media. 2 years of hands-on experience with web development.",
     },
     {
       title: "Bachelors degree",
-      description: "in business development and innovation",
-    },
-    {
-      title: "7+ years",
-      description: "work experience across various industries",
+      description:
+        "in business development, entrepreneurship and innovation from Kristiania University.",
     },
   ];
 

@@ -33,7 +33,7 @@ export default function SkillsSection() {
             <img
               src={icon}
               alt={label}
-              className="w-16 h-16 rounded-full p-3 bg-gradient-to-br from-pink-500 to-yellow-400 shadow-[0_0_80px_0_rgba(145,145,145,1)] animate-pulse"
+              className="w-16 h-16 rounded-full p-3 bg-gradient-to-br from-pink-500 to-yellow-400 shadow-[0_0_80px_0_rgba(145,145,145,1)] "
             />
             <p className="mt-4 text-base font-semibold font-poppins">{label}</p>
           </div>
