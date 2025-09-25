@@ -23,7 +23,7 @@ export default function ProjectCard({ project }) {
 
       {/* BOTTOM SECTION: Links and button */}
       <div>
-        <div className="flex justify-center gap-6 text-pink-500 font-poppins font-semibold uppercase text-sm">
+        <div className="flex justify-center gap-6 text-[#ff0080] hover:text-[#e20071] transition font-poppins font-semibold uppercase text-sm">
           <a href={project.website} target="_blank" rel="noopener noreferrer">
             Go to Website <i className="fa-solid fa-arrow-pointer" />
           </a>
@@ -34,7 +34,7 @@ export default function ProjectCard({ project }) {
 
         <Link
           to={`/projects/${project.id}`}
-          className="mt-3 block text-center bg-pink-600 text-white font-bold py-2 rounded hover:bg-pink-500 transition"
+          className="mt-3 block text-center bg-[#ff0080] text-white font-bold py-2 rounded hover:bg-[#e20071] transition"
         >
           Read more
         </Link>

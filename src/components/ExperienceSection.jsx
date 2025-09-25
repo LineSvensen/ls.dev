@@ -19,7 +19,7 @@ export default function ExperienceSection() {
       <div className="flex flex-col md:flex-row justify-evenly items-center text-center gap-10 md:gap-0">
         {experiences.map((exp, index) => (
           <div key={index} className="max-w-sm px-4">
-            <h3 className="text-pink-500 font-bold text-xl font-spartan">
+            <h3 className="text-[#ff0080] font-bold text-lg sm:text-xl font-spartan gradient-text">
               {exp.title}
             </h3>
             <p className="text-base font-poppins mt-1">{exp.description}</p>

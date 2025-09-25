@@ -38,7 +38,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setMenuOpen((prev) => !prev)}
-          className="md:hidden focus:outline-none transition-transform duration-300 z-[999]"
+          className="md:hidden focus:outline-none transition-transform duration-300 z-[999] cursor-pointer"
           aria-label="Toggle menu"
         >
           {menuOpen ? (
